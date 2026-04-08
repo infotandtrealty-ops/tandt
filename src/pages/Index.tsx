@@ -14,7 +14,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 import AssociationsSection from "@/components/home/AssociationsSection";
 import CTASection from "@/components/home/CTASection";
 import FAQSection from "@/components/home/FAQSection";
-import WhyChoose from "@/components/home/WhyChoose";
+// import WhyChoose from "@/components/home/WhyChoose";
 
 const Index = () => {
   return (
@@ -31,7 +31,7 @@ const Index = () => {
       {/* <ServicesSection /> */}
       {/* <WhyChooseSection /> */}
       <AssociationsSection />
-      <WhyChoose />
+      {/* <WhyChoose /> */}
       <TestimonialsSection />
       <FAQSection />
       {/* <CTASection /> */}
