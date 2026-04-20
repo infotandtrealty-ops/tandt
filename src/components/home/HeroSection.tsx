@@ -86,7 +86,7 @@ const HeroSection = () => {
                 Real Estate Advisory & Portfolio Management | Gurgaon
               </p>
               <h1 className="font-display text-white text-3xl md:text-5xl lg:text-6xl font-bold mt-3 leading-tight">
-                SStrategic Real Estate Advisory Across Asset Classes
+                Strategic Real Estate Advisory Across Asset Classes
               </h1>
               <p className="text-white/80 mt-3 md:mt-4 max-w-2xl text-base md:text-lg">
                 T and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets.
@@ -97,7 +97,7 @@ const HeroSection = () => {
                   variant="gold" 
                   size="lg" 
                   className="h-12 px-8 rounded-xl text-base font-semibold"
-                  onClick={() => navigate("/projects")}
+                  onClick={() => navigate("/search")}
                 >
                   Explore Our Portfolio
                 </Button>

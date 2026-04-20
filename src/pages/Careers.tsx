@@ -26,42 +26,42 @@ const benefits = [
 
 const jobOpenings = [
   {
-    title: "Architect",
+    title: "Sales Executive (Real Estate)",
     location: "Gurgaon",
     type: "Full-time",
-    department: "Design & Development",
-    description: "Seeking a talented Architect to contribute to real estate advisory and development projects. You will create innovative spaces that align with institutional capital requirements.",
+    department: "Sales",
+    description: "We are looking for a dynamic Sales Executive to handle property sales, client meetings, and site visits. You will be responsible for converting leads into successful deals.",
     responsibilities: [
-      "Design architectural concepts for residential & mixed-use projects",
-      "Prepare detailed drawings and specifications",
-      "Ensure compliance with local Gurgaon/NCR building codes",
-      "Present design concepts to high-profile stakeholders",
+      "Handle inbound and outbound property inquiries",
+      "Conduct site visits with clients",
+      "Explain project details and investment benefits",
+      "Close deals and achieve sales targets"
     ],
     requirements: [
-      "5+ years of experience in architectural design",
-      "Proficiency in AutoCAD, Revit, and SketchUp",
-      "Strong understanding of real estate development processes",
+      "1-3 years of experience in real estate sales",
+      "Good communication and convincing skills",
+      "Ability to handle clients professionally",
     ],
   },
   {
-    title: "Social Media Manager",
+    title: "Telecaller / Relationship Executive",
     location: "Gurgaon",
     type: "Full-time",
-    department: "Marketing & Communications",
-    description: "Position T and T Realty as a thought leader. We need a strategist who understands the difference between high-end advisory branding and typical property listings.",
+    department: "Customer Support & Sales",
+    description: "We are hiring Telecallers to manage leads, follow up with clients, and generate site visit appointments for the sales team.",
     responsibilities: [
-      "Develop strategies for LinkedIn, Instagram, and Twitter",
-      "Create thought leadership content for HNIs and investors",
-      "Manage social media advertising and performance metrics",
+      "Call and follow up with leads from CRM",
+      "Explain basic project details to clients",
+      "Schedule site visits for sales team",
+      "Maintain proper lead records and updates"
     ],
     requirements: [
-      "3+ years in social media management (Real Estate preferred)",
-      "Excellent copywriting and content creation skills",
-      "Analytical mindset to track ROI on campaigns",
+      "Good Hindi communication (English basic required)",
+      "Confident speaking and convincing ability",
+      "Fresher & experienced both can apply",
     ],
   },
 ];
-
 const Careers = () => {
   const [expandedJob, setExpandedJob] = useState(null);
 
@@ -116,7 +116,7 @@ const Careers = () => {
               <h2 className="font-display text-4xl font-bold mt-2">Current Openings</h2>
             </div>
             <div className="text-muted-foreground hidden md:block italic">
-              Don't see a fit? Email us at <span className="text-foreground font-semibold">careers@T and Trealty.com</span>
+              Don't see a fit? Email us at <span className="text-foreground font-semibold">careers@TandTrealty.com</span>
             </div>
           </div>
 

@@ -35,9 +35,9 @@ const Header = () => {
     ],
     services: [
       { label: "All Services", link: "/services" },
-      { label: "Residential Advisory", link: "/services" },
-      { label: "Commercial Advisory", link: "/services" },
-      { label: "Land Advisory", link: "/services" }
+      { label: "Commercial", link: "/services/commercial" },
+      { label: "Residential", link: "/services/residential" },
+      { label: "Land", link: "/services/land" }
     ],
     projects: [
       { label: "All Projects", link: "/search" },
@@ -49,6 +49,24 @@ const Header = () => {
       { label: "Blogs", link: "/media/blogs" },
       { label: "Videos", link: "/media/videos" },
       // { label: "Press", link: "/media/press" }
+    ]
+  };
+
+  // Service categories for "What We Do" mega menu
+  const serviceCategories = {
+    commercial: [
+      { label: "SCO Plots", link: "/services/commercial/sco-plots" },
+      { label: "Retail Shops", link: "/services/commercial/retail-shops" },
+      { label: "Office Spaces", link: "/services/commercial/office-spaces" }
+    ],
+    residential: [
+      { label: "Residential Plots", link: "/services/residential/residential-plots" },
+      { label: "Floors", link: "/services/residential/floors" },
+      { label: "Highrise Apartments", link: "/services/residential/highrise-apartments" }
+    ],
+    land: [
+      { label: "Farm Houses", link: "/services/land/farm-houses" },
+      { label: "Farmlands", link: "/services/land/farmlands" }
     ]
   };
 
@@ -142,19 +160,7 @@ const Header = () => {
 
             {/* Desktop Right Links */}
             <div className="hidden lg:flex items-center justify-end gap-8 flex-1">
-            <Link 
-    to="/media/insights" 
-    className={cn(
-      "group relative text-sm font-bold uppercase tracking-widest transition-colors duration-300",
-      location.pathname === "/media/insights" ? "text-[#D4AF37]" : "text-white hover:text-[#D4AF37]"
-    )}
-  >
-    Insights
-    <span className={cn(
-      "absolute -bottom-1 left-0 h-[2px] bg-[#D4AF37] transition-all duration-300",
-      location.pathname === "/media/insights" ? "w-full" : "w-0 group-hover:w-full"
-    )} />
-  </Link>
+   
               <Link 
                 to="/careers" 
                 className={cn(
@@ -200,69 +206,146 @@ const Header = () => {
               className="absolute top-full left-0 w-full bg-[#031916] border-t border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] z-[90] hidden lg:block overflow-hidden"
             >
               <div className="container-custom py-14 relative z-10">
-                <div className="grid grid-cols-12 gap-16">
-                  
-                  {/* Dynamic Title Section */}
-                  <div className="col-span-4 border-r border-white/10 pr-12">
-                    <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase block mb-4">
-                      Explore Portfolio
-                    </span>
-                    <h3 className="text-5xl font-display font-bold text-white leading-[1.1] mb-6">
-                      {activeMegaMenu === "about" && <>The <br />T and T Spirit</>}
-                      {activeMegaMenu === "services" && <>Expert <br />Advisory</>}
-                      {activeMegaMenu === "projects" && <>Premium <br />Assets</>}
-                      {activeMegaMenu === "media" && <>Market <br />Intelligence</>}
-                    </h3>
-                    <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-                       {activeMegaMenu === "media" ? "Stay updated with the latest trends and data-driven insights in Gurgaon real estate." : "Discover our legacy of trust and excellence."}
-                    </p>
-                  </div>
-
-                  {/* Quick Selection Section */}
-                  <div className="col-span-4 space-y-2">
-                    <h4 className="text-white/30 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
-                      Quick Selection
-                    </h4>
-                    <div className="grid gap-1">
-                      {megaMenuContent[activeMegaMenu]?.map((item, i) => (
-                        <Link 
-                          key={i} 
-                          to={item.link} 
-                          className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
-                        >
-                          <span className="text-lg font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-2 transition-all">
-                            {item.label}
-                          </span>
-                          <ArrowRight className="w-4 h-4 text-[#D4AF37] opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" />
-                        </Link>
-                      ))}
+                {activeMegaMenu === "services" ? (
+                  // Special layout for "What We Do" - Three Categories
+                  <div className="grid grid-cols-12 gap-8">
+                    <div className="col-span-3 border-r border-white/10 pr-8">
+                      <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase block mb-4">
+                        What We Do
+                      </span>
+                      <h3 className="text-4xl font-display font-bold text-white leading-[1.1] mb-6">
+                        Our <br />Services
+                      </h3>
+                      <p className="text-white/50 text-sm leading-relaxed max-w-xs">
+                        Comprehensive real estate solutions across commercial, residential, and land sectors.
+                      </p>
                     </div>
-                  </div>
-                 
+                    
+                    {/* Three Categories */}
+                    <div className="col-span-9 grid grid-cols-3 gap-8">
+                      {/* Commercial */}
+                      <div>
+                        <h4 className="text-[#D4AF37] font-bold text-lg mb-4 uppercase tracking-wide">Commercial</h4>
+                        <div className="space-y-3">
+                          {serviceCategories.commercial.map((item, i) => (
+                            <Link 
+                              key={i} 
+                              to={item.link} 
+                              className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
+                            >
+                              <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
+                                {item.label}
+                              </span>
+                              <ArrowRight className="w-3 h-3 text-[#D4AF37] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
 
-                  {/* Visual Card Section */}
-                  <div className="col-span-4">
-                    <h4 className="text-white/30 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
-                      Featured
-                    </h4>
-                    <div className="relative group rounded-2xl overflow-hidden aspect-[16/10] border border-white/10 shadow-2xl">
-                      <img
-                        src={activeMegaMenu === "media" ? "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?w=600" : "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600"}
-                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                        alt="Navigation Visual"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#031916] via-transparent to-transparent opacity-80" />
-                      <div className="absolute bottom-6 left-6 right-6">
-                        <p className="text-[#D4AF37] text-[10px] font-bold tracking-widest uppercase mb-1">
-                          {activeMegaMenu === "media" ? "Knowledge Hub" : "Trending"}
-                        </p>
-                        <p className="text-white font-bold text-lg">
-                          {activeMegaMenu === "media" ? "Real Estate Market Trends" : "Luxury Residential Corridor"}
-                        </p>
+                      {/* Residential */}
+                      <div>
+                        <h4 className="text-[#D4AF37] font-bold text-lg mb-4 uppercase tracking-wide">Residential</h4>
+                        <div className="space-y-3">
+                          {serviceCategories.residential.map((item, i) => (
+                            <Link 
+                              key={i} 
+                              to={item.link} 
+                              className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
+                            >
+                              <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
+                                {item.label}
+                              </span>
+                              <ArrowRight className="w-3 h-3 text-[#D4AF37] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Land */}
+                      <div>
+                        <h4 className="text-[#D4AF37] font-bold text-lg mb-4 uppercase tracking-wide">Land</h4>
+                        <div className="space-y-3">
+                          {serviceCategories.land.map((item, i) => (
+                            <Link 
+                              key={i} 
+                              to={item.link} 
+                              className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
+                            >
+                              <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
+                                {item.label}
+                              </span>
+                              <ArrowRight className="w-3 h-3 text-[#D4AF37] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ) : (
+                  // Original layout for other menus
+                  <div className="grid grid-cols-12 gap-16">
+                    
+                    {/* Dynamic Title Section */}
+                    <div className="col-span-4 border-r border-white/10 pr-12">
+                      <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase block mb-4">
+                        Explore Portfolio
+                      </span>
+                      <h3 className="text-5xl font-display font-bold text-white leading-[1.1] mb-6">
+                        {activeMegaMenu === "about" && <>The <br />T and T Spirit</>}
+                        {activeMegaMenu === "projects" && <>Premium <br />Assets</>}
+                        {activeMegaMenu === "media" && <>Market <br />Intelligence</>}
+                      </h3>
+                      <p className="text-white/50 text-sm leading-relaxed max-w-xs">
+                         {activeMegaMenu === "media" ? "Stay updated with the latest trends and data-driven insights in Gurgaon real estate." : "Discover our legacy of trust and excellence."}
+                      </p>
+                    </div>
+
+                    {/* Quick Selection Section */}
+                    <div className="col-span-4 space-y-2">
+                      <h4 className="text-white/30 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
+                        Quick Selection
+                      </h4>
+                      <div className="grid gap-1">
+                        {megaMenuContent[activeMegaMenu]?.map((item, i) => (
+                          <Link 
+                            key={i} 
+                            to={item.link} 
+                            className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
+                          >
+                            <span className="text-lg font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-2 transition-all">
+                              {item.label}
+                            </span>
+                            <ArrowRight className="w-4 h-4 text-[#D4AF37] opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" />
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                   
+
+                    {/* Visual Card Section */}
+                    <div className="col-span-4">
+                      <h4 className="text-white/30 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
+                        Featured
+                      </h4>
+                      <div className="relative group rounded-2xl overflow-hidden aspect-[16/10] border border-white/10 shadow-2xl">
+                        <img
+                          src={activeMegaMenu === "media" ? "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?w=600" : "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600"}
+                          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                          alt="Navigation Visual"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#031916] via-transparent to-transparent opacity-80" />
+                        <div className="absolute bottom-6 left-6 right-6">
+                          <p className="text-[#D4AF37] text-[10px] font-bold tracking-widest uppercase mb-1">
+                            {activeMegaMenu === "media" ? "Knowledge Hub" : "Trending"}
+                          </p>
+                          <p className="text-white font-bold text-lg">
+                            {activeMegaMenu === "media" ? "Real Estate Market Trends" : "Luxury Residential Corridor"}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </motion.div>
           )}
@@ -293,14 +376,33 @@ const Header = () => {
               onClick={() => setMobileDropdown(mobileDropdown === key ? null : key)}
               className="w-full flex justify-between items-center text-xl font-bold text-white py-2 uppercase"
             >
-              {key.replace("-", " ")} <ChevronDown className={cn("w-5 h-5 transition-transform text-white", mobileDropdown === key && "rotate-180")} />
+              {key === "services" ? "What We Do" : key.replace("-", " ")} <ChevronDown className={cn("w-5 h-5 transition-transform text-white", mobileDropdown === key && "rotate-180")} />
             </button>
             <AnimatePresence>
               {mobileDropdown === key && (
                 <motion.div initial={{ height: 0 }} animate={{ height: "auto" }} exit={{ height: 0 }} className="overflow-hidden pl-4 space-y-3 mt-2">
-                  {megaMenuContent[key].map((item, i) => (
-                    <Link key={i} to={item.link} className="block text-white/60 font-medium hover:text-gold">{item.label}</Link>
-                  ))}
+                  {key === "services" ? (
+                    // Special layout for services with categories
+                    <div className="space-y-4">
+                      {Object.entries(serviceCategories).map(([categoryKey, items]) => (
+                        <div key={categoryKey} className="space-y-2">
+                          <h5 className="text-[#D4AF37] font-bold text-sm uppercase tracking-wide">
+                            {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
+                          </h5>
+                          {items.map((item, i) => (
+                            <Link key={i} to={item.link} className="block text-white/60 font-medium hover:text-gold pl-3 py-1">
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    // Regular layout for other menus
+                    megaMenuContent[key].map((item, i) => (
+                      <Link key={i} to={item.link} className="block text-white/60 font-medium hover:text-gold">{item.label}</Link>
+                    ))
+                  )}
                 </motion.div>
               )}
             </AnimatePresence>
