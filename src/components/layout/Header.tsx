@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <>
       {/* --- Desktop Top Utility Bar --- */}
-      <div className="bg-[#031916] border-b border-white/10 py-2 hidden lg:block">
+      {/* <div className="bg-[#031916] border-b border-white/10 py-2 hidden lg:block">
         <div className="container-custom flex justify-between items-center text-[13px] text-white/80">
           <div className="flex items-center gap-6">
             <Link to="/media/blogs" className="flex items-center gap-1.5 hover:text-white transition-colors">
@@ -78,7 +78,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* --- Main Navigation Header --- */}
       <header
