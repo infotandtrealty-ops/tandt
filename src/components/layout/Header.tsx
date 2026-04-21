@@ -230,7 +230,7 @@ const Header = () => {
                           {serviceCategories.commercial.map((item, i) => (
                             <Link 
                               key={i} 
-                              to={item.link} 
+                           to="/services"
                               className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
                             >
                               <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
@@ -249,7 +249,7 @@ const Header = () => {
                           {serviceCategories.residential.map((item, i) => (
                             <Link 
                               key={i} 
-                              to={item.link} 
+                            to="/services"
                               className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
                             >
                               <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
@@ -268,7 +268,7 @@ const Header = () => {
                           {serviceCategories.land.map((item, i) => (
                             <Link 
                               key={i} 
-                              to={item.link} 
+                           to="/services" 
                               className="group flex items-center justify-between p-3 -ml-3 rounded-lg hover:bg-white/[0.03] transition-all duration-300"
                             >
                               <span className="text-base font-medium text-white/80 group-hover:text-[#D4AF37] group-hover:translate-x-1 transition-all">
@@ -281,6 +281,20 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 ) : (
                   // Original layout for other menus
                   <div className="grid grid-cols-12 gap-16">

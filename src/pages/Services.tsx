@@ -68,6 +68,23 @@ const Services = () => {
         breadcrumbs={[{ name: "Services" }]}
       />
 
+      {/* --- NEW SECTION ADDED HERE --- */}
+      <section className="bg-[#031916] py-12 border-b border-white/10">
+        <div className="container-custom text-center">
+          <h2 className="text-white text-3xl md:text-4xl font-bold mb-8">What We Offer:</h2>
+          
+          <div className="bg-[#D4AF37] py-4 px-8 rounded-sm inline-block w-full max-w-4xl mb-8">
+            <h4 className="text-[#031916] font-bold text-sm md:text-lg uppercase tracking-widest">
+              Expert Guidance | Exclusive Portfolio Management | Short & Long Term Wealth Creation
+            </h4>
+          </div>
+
+          <p className="text-white text-xl md:text-2xl font-medium leading-relaxed max-w-4xl mx-auto">
+            Analyze Your Real Estate Holdings With Our Experts And Expand Your Portfolio With High-Yield Properties.
+          </p>
+        </div>
+      </section>
+
       {/* Intro Section */}
       <section className="section-padding">
         <div className="container-custom">
@@ -122,18 +139,13 @@ const Services = () => {
                 key={index}
                 className="group relative h-[450px] overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl"
               >
-                {/* Background Image */}
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
                   style={{ backgroundImage: `url(${service.image})` }}
                 />
-                
-                {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
 
-                {/* Content */}
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  {/* Icon Box */}
                   <div className="mb-4 w-12 h-12 rounded-lg bg-gold flex items-center justify-center text-primary transform -translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                     <service.icon className="w-6 h-6" />
                   </div>
@@ -146,7 +158,6 @@ const Services = () => {
                     {service.description}
                   </p>
                   
-                  {/* CLICKABLE ENQUIRE NOW BUTTON */}
                   <Link 
                     to="/contact" 
                     className="mt-6 pt-4 border-t border-white/20 flex items-center text-gold font-semibold text-sm transform translate-y-8 group-hover:translate-y-0 transition-all duration-500 hover:text-white"

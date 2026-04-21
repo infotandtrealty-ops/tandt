@@ -175,65 +175,52 @@ export default function SearchResults() {
 
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
 
-  {properties.map((item, index) => (
-    <div
-      key={index}
-      className="bg-white rounded-2xl overflow-hidden shadow-lg border hover:shadow-xl transition"
-    >
-
-      {/* IMAGE + BADGE */}
-      <div className="relative">
-        <img
-          src={item.cardImageUrl}
-          className="w-full h-56 object-cover"
-        />
-
-        <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-1 rounded-full">
-          New Launch
-        </span>
-      </div>
-
-      {/* CONTENT */}
-      <div className="p-5">
-
-        {/* DEVELOPER */}
-        <p className="text-xs text-orange-500 font-semibold uppercase mb-1">
-          {item.developer}
-        </p>
-
-        {/* TITLE */}
-        <h2 className="text-lg font-semibold leading-tight mb-2">
-          {item.title}
-        </h2>
-
-        {/* LOCATION */}
-        <p className="text-sm text-gray-500 mb-3">
-          {item.subtitle}
-        </p>
-
-        {/* FEATURES */}
-        <div className="text-sm text-gray-600 space-y-1 mb-3">
-          {item.features?.map((f, i) => (
-            <p key={i}>• {f}</p>
-          ))}
-        </div>
-
-        {/* PRICE */}
-        <p className="font-semibold text-black mb-4">
-          {item.priceText}
-        </p>
-
-        {/* BUTTON */}
-        <a
-          href={`tel:${item.phone}`}
-          className="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold py-2 rounded-full"
-        >
-          View Details
-        </a>
-
-      </div>
+{properties.map((item, index) => (
+  <div
+    key={index}
+    // 1. Ensure the card itself is a flex container
+    className="bg-white rounded-2xl overflow-hidden shadow-lg border hover:shadow-xl transition flex flex-col"
+  >
+    {/* IMAGE + BADGE */}
+    <div className="relative">
+      <img src={item.cardImageUrl} className="w-full h-56 object-cover" />
+      <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-1 rounded-full">
+        New Launch
+      </span>
     </div>
-  ))}
+
+    {/* 2. Content container: 'flex-grow' fills empty space */}
+    <div className="p-5 flex flex-col flex-grow">
+      <p className="text-xs text-orange-500 font-semibold uppercase mb-1">
+        {item.developer}
+      </p>
+      <h2 className="text-lg font-semibold leading-tight mb-2">
+        {item.title}
+      </h2>
+      <p className="text-sm text-gray-500 mb-3">
+        {item.subtitle}
+      </p>
+
+      {/* 3. This area grows to push the button down */}
+      <div className="text-sm text-gray-600 space-y-1 mb-4 flex-grow">
+        {item.features?.map((f, i) => (
+          <p key={i}>• {f}</p>
+        ))}
+      </div>
+
+      {/* 4. Price and Button will now be aligned at the bottom */}
+      <p className="font-semibold text-black mb-4">
+        {item.priceText}
+      </p>
+      <a
+        href={`tel:${item.phone}`}
+        className="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold py-2 rounded-full mt-auto"
+      >
+        View Details
+      </a>
+    </div>
+  </div>
+))}
 
 </div>
 
