@@ -3,18 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { getUniqueDevelopers, getUniqueLocations } from "@/data/properties";
 
-const desktopImages = [
-  "/banner/banner-1.mp4", 
-];
-
-const mobileImages = [
-  "/banner/888.jpeg",
-  "/banner/1111.jpeg"
+// ✅ Single media source (video for all devices)
+const bannerMedia = [
+  "/banner/banner-1.mp4"
 ];
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
 
   const [q, setQ] = useState("");
@@ -24,46 +19,29 @@ const HeroSection = () => {
   const locationOptions = useMemo(() => getUniqueLocations(), []);
   const developerOptions = useMemo(() => getUniqueDevelopers(), []);
 
-  // Screen size detect
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
-  // Auto slide
+  // Auto slide (future-proof if you add more videos/images)
   useEffect(() => {
     const timer = setInterval(() => {
-      const len = (isMobile ? mobileImages : desktopImages).length;
+      const len = bannerMedia.length;
       setCurrentIndex((prev) => (prev === len - 1 ? 0 : prev + 1));
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [isMobile]);
-
-  useEffect(() => {
-    setCurrentIndex(0);
-  }, [isMobile]);
-
-  const currentImages = isMobile ? mobileImages : desktopImages;
+  }, []);
 
   return (
     <section className="relative w-full overflow-hidden bg-white">
       
       <div className="relative w-full aspect-[9/16] md:aspect-[21/9] lg:aspect-[25/9]">
         
+        {/* Slider */}
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {currentImages.map((src, index) => (
+          {bannerMedia.map((src, index) => (
             <div key={index} className="w-full h-full flex-shrink-0">
               
-              {/* 🔥 VIDEO OR IMAGE CONDITION */}
               {src.endsWith(".mp4") ? (
                 <video
                   src={src}
@@ -71,6 +49,7 @@ const HeroSection = () => {
                   muted
                   loop
                   playsInline
+                  preload="auto"
                   className="w-full h-full object-cover"
                 />
               ) : (
@@ -97,12 +76,12 @@ const HeroSection = () => {
                 Real Estate Advisory & Portfolio Management | Gurgaon
               </p>
 
-<h1
-  className="text-white text-2xl md:text-4xl lg:text-5xl font-medium mt-3 leading-snug"
-  style={{ fontFamily: 'Poppins, sans-serif' }}
->
-  Strategic Real Estate Advisory Across Asset Classes
-</h1>
+              <h1
+                className="text-white text-2xl md:text-4xl lg:text-5xl font-medium mt-3 leading-snug"
+                style={{ fontFamily: 'Poppins, sans-serif' }}
+              >
+                Strategic Real Estate Advisory Across Asset Classes
+              </h1>
 
               <p className="text-white/80 mt-3 md:mt-4 max-w-2xl text-base md:text-lg">
                 T and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets.
@@ -132,9 +111,9 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Dots */}
+        {/* Dots (works if you add more slides later) */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-          {currentImages.map((_, index) => (
+          {bannerMedia.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
