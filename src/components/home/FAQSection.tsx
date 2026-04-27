@@ -88,9 +88,15 @@ const FAQSection = () => {
     <section className="py-24 bg-gray-50">
       <div className="container-custom max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Frequently Asked <span className="text-gold">Questions</span>
-          </h2>
+<h2
+  className="text-3xl md:text-4xl font-semibold mb-4 text-gray-900"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Frequently Asked{" "}
+  <span className="text-gold font-medium">
+    Questions
+  </span>
+</h2>
           <p className="text-muted-foreground">
             Everything you need to know about our real estate consultancy services.
           </p>

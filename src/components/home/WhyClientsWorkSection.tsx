@@ -26,9 +26,15 @@ const WhyClientsWorkSection = () => {
           >
             T and T Methodology
           </motion.div>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#031916] leading-tight mb-4">
-            Advisory First. <span className="text-gold italic font-light">Transaction Second.</span>
-          </h2>
+<h2
+  className="text-3xl md:text-5xl font-semibold text-[#031916] leading-snug mb-4"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Advisory First.{" "}
+  <span className="text-gold italic font-normal">
+    Transaction Second.
+  </span>
+</h2>
         </div>
 
         {/* --- SPLIT LAYOUT --- */}

@@ -15,9 +15,12 @@ const AssociationsSection = () => {
           <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
             Our Partners
           </span>
-          <h2 className="font-display text-2xl md:text-4xl font-bold text-foreground">
-            Our Associations
-          </h2>
+<h2
+  className="text-2xl md:text-4xl font-semibold text-foreground"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Our Associations
+</h2>
         </div>
         
         {/* Logos Marquee Container */}
