@@ -25,8 +25,8 @@ const Index = () => {
       <GurgaonExpertiseSection />
       <WhoWeServeSection />
       <PhilosophySection />
-      <FeaturedPropertiesSection />
-      <FeaturedLocationsSection />
+      {/* <FeaturedPropertiesSection /> */}
+      {/* <FeaturedLocationsSection /> */}
       {/* <AboutSection /> */}
       {/* <ServicesSection /> */}
       {/* <WhyChooseSection /> */}

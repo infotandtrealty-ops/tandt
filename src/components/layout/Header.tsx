@@ -41,8 +41,8 @@ const Header = () => {
     ],
     projects: [
       { label: "All Projects", link: "/search" },
-      { label: "Residential Properties", link: "/properties/residential" },
-      { label: "Commercial Properties", link: "/properties/commercial" },
+      { label: "Residential Properties", link: "/search" },
+      { label: "Commercial Properties", link: "/search" },
     ],
     media: [
       // { label: "Insights", link: "/media/insights" },
@@ -337,11 +337,11 @@ const Header = () => {
                    
 
                     {/* Visual Card Section */}
-                    <div className="col-span-4">
+                    {/* <div className="col-span-4">
                       <h4 className="text-white/30 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
                         Featured
                       </h4>
-                      <div className="relative group rounded-2xl overflow-hidden aspect-[16/10] border border-white/10 shadow-2xl">
+                       <div className="relative group rounded-2xl overflow-hidden aspect-[16/10] border border-white/10 shadow-2xl">
                         <img
                           src={activeMegaMenu === "media" ? "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?w=600" : "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600"}
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -356,8 +356,12 @@ const Header = () => {
                             {activeMegaMenu === "media" ? "Real Estate Market Trends" : "Luxury Residential Corridor"}
                           </p>
                         </div>
-                      </div>
-                    </div>
+                      </div> 
+                    </div> */}
+
+
+
+                    
                   </div>
                 )}
               </div>

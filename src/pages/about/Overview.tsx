@@ -16,14 +16,18 @@ const highlights = [
 const Overview = () => {
   return (
     <Layout>
-      <PageHeader
-        title="Overview"
-        subtitle="Tradition of trust and transparency"
-        breadcrumbs={[
-          { name: "About Us", href: "/about/overview" },
-          { name: "Overview" },
-        ]}
-      />
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      Overview
+    </span>
+  }
+  subtitle="Tradition of trust and transparency"
+  breadcrumbs={[
+    { name: "About Us", href: "/about/overview" },
+    { name: "Overview" },
+  ]}
+/>
 
       <section className="section-padding">
         <div className="container-custom">

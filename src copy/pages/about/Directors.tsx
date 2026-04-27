@@ -28,14 +28,18 @@ const directors = [
 const Directors = () => {
   return (
     <Layout>
-      <PageHeader
-        title="Director's Message"
-        subtitle="Tradition of trust and transparency"
-        breadcrumbs={[
-          { name: "About Us", href: "/about/overview" },
-          { name: "Director's Message" },
-        ]}
-      />
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      Director's Message
+    </span>
+  }
+  subtitle="Tradition of trust and transparency"
+  breadcrumbs={[
+    { name: "About Us", href: "/about/overview" },
+    { name: "Director's Message" },
+  ]}
+/>
 
       <section className="section-padding">
         <div className="container-custom">

@@ -18,14 +18,18 @@ const values = [
 const Spirit = () => {
   return (
     <Layout>
-      <PageHeader
-        title="T and T Spirit"
-        subtitle="Values Over Value: Our commitment to excellence"
-        breadcrumbs={[
-          { name: "About Us", href: "/about/overview" },
-          { name: "T and T Spirit" },
-        ]}
-      />
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      T and T Spirit
+    </span>
+  }
+  subtitle="Values Over Value: Our commitment to excellence"
+  breadcrumbs={[
+    { name: "About Us", href: "/about/overview" },
+    { name: "T and T Spirit" },
+  ]}
+/>
 
       {/* Philosophy Section */}
       <section className="py-24 bg-white overflow-hidden">
@@ -36,9 +40,19 @@ const Spirit = () => {
               <span className="text-gold font-bold tracking-[0.3em] uppercase text-xs mb-4 block">
                 Our Philosophy
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
-                The DNA of <br />Trust & Transparency
-              </h2>
+
+
+<h2 
+  className="text-3xl md:text-4xl font-medium text-gray-900 mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  The DNA of Trust & Transparency
+</h2>
+
+
+
+
+
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
                 At T and T Realty, we believe that real estate isn't just about brick and mortar; it's about the <span className="text-slate-900 font-semibold underline decoration-gold/40">long-term legacy</span> we build with our partners and clients.
               </p>
@@ -56,7 +70,7 @@ const Spirit = () => {
                 <div className="w-12 h-12 rounded-2xl bg-gold/20 flex items-center justify-center mb-6 group-hover:bg-gold">
                   <Eye className="w-6 h-6 text-gold group-hover:text-[#031916]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                <h3   style={{ fontFamily: 'Poppins, sans-serif' }}  className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="opacity-70 leading-relaxed">
                 To become Gurgaon’s most trusted multi-asset real estate advisory firm.
                 </p>
@@ -67,7 +81,7 @@ const Spirit = () => {
                 <div className="w-12 h-12 rounded-2xl bg-gold/20 flex items-center justify-center mb-6 group-hover:bg-gold">
                   <Target className="w-6 h-6 text-gold group-hover:text-[#031916]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                <h3   style={{ fontFamily: 'Poppins, sans-serif' }}  className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="opacity-70 leading-relaxed">
                 To help clients build resilient, future-ready real estate portfolios through intelligence, ethics, and strategic clarity.
                 </p>

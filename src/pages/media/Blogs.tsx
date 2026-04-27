@@ -136,14 +136,25 @@ const Blogs = () => {
 
   return (
     <Layout>
-      <PageHeader
-        title="Blog / Insights"
-        subtitle="Market Intelligence. Strategic Perspectives. Gurgaon Focus."
-        breadcrumbs={[
-          { name: "Media", href: "/media/videos" },
-          { name: "Blogs" },
-        ]}
-      />
+
+
+
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      Blog / Insights
+    </span>
+  }
+  subtitle="Market Intelligence. Strategic Perspectives. Gurgaon Focus."
+  breadcrumbs={[
+    { name: "Media", href: "/media/videos" },
+    { name: "Blogs" },
+  ]}
+/>
+
+
+
+
 
       <section className="section-padding">
         <div className="container-custom">

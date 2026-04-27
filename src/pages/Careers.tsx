@@ -26,7 +26,7 @@ const benefits = [
 
 const jobOpenings = [
   {
-    title: "Sales Executive (Real Estate)",
+    title: "Business Development Executive(BDE)/ Business Development Manager(BDM)",
     location: "Gurgaon",
     type: "Full-time",
     department: "Sales",

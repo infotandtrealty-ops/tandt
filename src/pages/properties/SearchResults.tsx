@@ -56,7 +56,7 @@ const properties = [
     ],
     priceText: "Price On Request",
     phone: "8088113333",
-    cardImageUrl: "/projects/82-A.jpg"
+    cardImageUrl: "/projects/traic.jpeg"
   },
 
 
@@ -74,7 +74,7 @@ const properties = [
     ],
     priceText: "Price On Request",
     phone: "8088113333",
-    cardImageUrl: "/projects/84.webp"
+    cardImageUrl: "/projects/ocus.jpeg"
   },
 
 
@@ -142,7 +142,7 @@ const properties = [
     ],
     priceText: "Price On Request",
     phone: "8088113333",
-    cardImageUrl: "/projects/84.webp"
+    cardImageUrl: "/projects/15.jpeg"
   }
 ];
 
@@ -184,9 +184,7 @@ export default function SearchResults() {
     {/* IMAGE + BADGE */}
     <div className="relative">
       <img src={item.cardImageUrl} className="w-full h-56 object-cover" />
-      <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-1 rounded-full">
-        New Launch
-      </span>
+    
     </div>
 
     {/* 2. Content container: 'flex-grow' fills empty space */}

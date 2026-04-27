@@ -36,7 +36,7 @@ const assetClasses = [
     title: "Our Channel Partners",
     description:
       "Building a trusted network and keeping business transparent is our strength. We offer support and commit to financial growth.",
-    image: "/projects/4.webp",
+    image: "/projects/4.jpeg",
   },
 ];
 

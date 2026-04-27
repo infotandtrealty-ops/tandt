@@ -61,12 +61,16 @@ const services = [
 const Services = () => {
   return (
     <Layout>
-      <PageHeader
-        title="Real Estate Consulting"
-        subtitle="Comprehensive real estate solutions tailored to your unique needs"
-        backgroundImage="/web/1.webp"
-        breadcrumbs={[{ name: "Services" }]}
-      />
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      Real Estate Consulting
+    </span>
+  }
+  subtitle="Comprehensive real estate solutions tailored to your unique needs"
+  backgroundImage="/web/1.webp"
+  breadcrumbs={[{ name: "Services" }]}
+/>
 
       {/* --- NEW SECTION ADDED HERE --- */}
       <section className="bg-[#031916] py-12 border-b border-white/10">
@@ -94,7 +98,7 @@ const Services = () => {
                 Real Estate Advisory | Gurgaon
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                Advisory-First Real Estate Services
+                Advisory-First Real Estate Services   
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 T and T Realty offers comprehensive advisory services across the entire real estate lifecycle. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities.

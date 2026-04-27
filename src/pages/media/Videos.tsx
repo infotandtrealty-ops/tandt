@@ -48,14 +48,18 @@ const Videos = () => {
 
   return (
     <Layout>
-      <PageHeader
-        title="Experience Excellence"
-        subtitle="Visual walkthroughs of our landmark developments"
-        breadcrumbs={[
-          { name: "Media", href: "/media/videos" },
-          { name: "Video Gallery" },
-        ]}
-      />
+<PageHeader
+  title={
+    <span style={{ fontFamily: 'Poppins, sans-serif' }}>
+      Experience Excellence
+    </span>
+  }
+  subtitle="Visual walkthroughs of our landmark developments"
+  breadcrumbs={[
+    { name: "Media", href: "/media/videos" },
+    { name: "Video Gallery" },
+  ]}
+/>
 
       <section className="section-padding bg-slate-50/50">
         <div className="container-custom">

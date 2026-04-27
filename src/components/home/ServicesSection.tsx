@@ -19,7 +19,7 @@ const services = [
     description: "We don't just commit but deliver results and our track record speaks for itself. With a Goal-Oriented approach, we are one of the topmost real estates.",
   },
   {
-    image: "/inv/4.webp",
+    image: "/inv/4.jpeg",
     title: "Channel Partners",
     description: "Building a trusted network & keeping the business transparent is what we can boast about. We offer our support & commit to financial growth.",
   },
