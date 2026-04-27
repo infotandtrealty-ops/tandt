@@ -37,9 +37,12 @@ const Overview = () => {
               <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium">
                 Real Estate Advisory & Portfolio Management | Gurgaon
               </span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                About T and T Realty
-              </h2>
+<h2
+  className="text-3xl md:text-4xl font-semibold text-foreground"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  About T and T Realty
+</h2>
               <p className="text-muted-foreground leading-relaxed">
                 T and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities with long-term vision.
               </p>
@@ -116,9 +119,12 @@ const Overview = () => {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why We Are Top Realtors?
-            </h2>
+<h2
+  className="text-3xl md:text-4xl font-semibold text-foreground mb-4"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Why We Are Top Realtors?
+</h2>
             <p className="text-muted-foreground">
               At T and T Realty, we adhere to quality & transparency at every level of development
             </p>
