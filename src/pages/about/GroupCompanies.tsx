@@ -65,7 +65,8 @@ const GroupCompanies = () => {
     { name: "About Us", href: "/about/overview" },
     { name: "Group Companies" },
   ]}
-  backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=compress&cs=tinysrgb&w=1600"
+backgroundImage="/web/1.webp"
+
 />
 
       <section className="py-24 bg-[#FAFBFC] relative overflow-hidden">

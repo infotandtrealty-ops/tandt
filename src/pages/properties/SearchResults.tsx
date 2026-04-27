@@ -158,7 +158,7 @@ export default function SearchResults() {
   className="relative pt-12 pb-24 bg-cover bg-center"
   style={{
     backgroundImage:
-      "url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+   "url('/web/1.webp')",
   }}
 >
   {/* Overlay for dark effect */}

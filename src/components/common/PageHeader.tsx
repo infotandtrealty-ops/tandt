@@ -17,7 +17,7 @@ const PageHeader = ({ title, subtitle, breadcrumbs, backgroundImage }: PageHeade
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: `url('${backgroundImage || "https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?cs=srgb&dl=pexels-pixabay-219692.jpg&fm=jpg"}')` 
+            backgroundImage: `url('${backgroundImage || "/web/1.webp"}')` 
           }}
         />
         
