@@ -86,7 +86,7 @@ const PhilosophySection = () => {
               className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800"
+                src="/projects/real.jpeg"
                 alt="T and T Realty Philosophy"
                 className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
               />

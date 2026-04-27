@@ -22,14 +22,14 @@ const assetClasses = [
     title: "Investors",
     description:
       "We understand your value points regarding the market and key customers, and present ideas that generate strong cash flow.",
-    image: "/projects/2.webp",
+    image: "/projects/Investors.jpeg",
   },
   {
     icon: Landmark,
     title: "Developers",
     description:
       "We don’t just commit but deliver results. With a goal-oriented approach, we are among the top real estate advisory teams.",
-    image: "/projects/3.webp",
+    image: "/projects/Developers.jpeg",
   },
   {
     icon: Briefcase,

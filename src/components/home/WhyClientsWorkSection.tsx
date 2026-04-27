@@ -1,7 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Shield, TrendingUp, Users, Eye, Target, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import advisoryImg from "../assets/advisory-first-transaction-second.jpeg";
+
 
 const reasons = [
   { icon: Shield, title: "Intelligence", description: "Deep local knowledge across evolving corridors.", cta: "View Insights" },
@@ -85,7 +86,7 @@ const WhyClientsWorkSection = () => {
               style={{ height: '400px' }} // Height 600px se 400px kar di
             >
               <img 
-                src="https://img.freepik.com/free-photo/portrait-male-real-estate-agent_23-2150164690.jpg?w=740" 
+  src="/projects/ad.jpeg"
                 alt="Premium Real Estate"
                 className="w-full h-full object-cover"
               />
