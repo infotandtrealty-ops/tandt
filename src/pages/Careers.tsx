@@ -81,9 +81,15 @@ const Careers = () => {
       <section className="pt-20 pb-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              We are building <span className="text-gold">Real Estate Intelligence.</span>
-            </h2>
+<h2
+  className="text-4xl md:text-5xl font-semibold text-[#031916] leading-snug mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  We are building{" "}
+  <span className="text-gold  font-normal">
+    Real Estate Intelligence.
+  </span>
+</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               At T and T Realty, we look for individuals who think analytically, understand markets (not just listings), 
               value ethics, and are comfortable working with HNIs and institutional capital.
@@ -113,8 +119,15 @@ const Careers = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-xl">
               <span className="text-gold font-bold tracking-widest uppercase text-sm">Opportunities</span>
-              <h2 className="font-display text-4xl font-bold mt-2">Current Openings</h2>
-            </div>
+<h2
+  className="text-4xl font-semibold text-[#031916] leading-snug mt-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Current{" "}
+  <span className="text-gold  font-normal">
+    Openings
+  </span>
+</h2>            </div>
             <div className="text-muted-foreground hidden md:block italic">
               Don't see a fit? Email us at <span className="text-foreground font-semibold">careers@TandTrealty.com</span>
             </div>

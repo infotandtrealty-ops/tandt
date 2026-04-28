@@ -40,9 +40,15 @@ const WhoWeServeSection = () => {
           <span className="text-gold font-semibold tracking-widest text-xs uppercase">
             Our Ecosystem
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
-            Who We Serve
-          </h2>
+<h2
+  className="text-3xl md:text-4xl font-semibold text-[#031916] leading-snug mt-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Who We{" "}
+  <span className="text-gold  font-normal">
+    Serve
+  </span>
+</h2>
           <p className="text-slate-500 mt-3 max-w-xl mx-auto text-sm">
             Tailored advisory for the architects of Gurgaon's skyline and the capital that drives it.
           </p>
