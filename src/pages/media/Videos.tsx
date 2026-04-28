@@ -76,9 +76,9 @@ const Videos = () => {
                 Premium Media Gallery
               </span>
             </motion.div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Watch Our <span className="text-gold">Success</span> Stories
-            </h2>
+<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-[Poppins]">
+  Watch Our <span className="text-gold">Success</span> Stories
+</h2>
             <div className="h-1 w-20 bg-gold mx-auto rounded-full" />
           </div>
 

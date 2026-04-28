@@ -163,9 +163,9 @@ const Blogs = () => {
             <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-xs font-semibold tracking-[0.2em] uppercase">
               T and T Realty Insights
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-              Market Intelligence. Strategic Perspectives. Gurgaon Focus.
-            </h2>
+<h2 className="text-3xl md:text-4xl font-bold text-foreground font-[Poppins]">
+  Market Intelligence. Strategic Perspectives. Gurgaon Focus.
+</h2>
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
               The T and T Realty Insights section brings together market intelligence, regulatory perspectives, and
               investment-led analysis across Gurgaon’s real estate landscape.
