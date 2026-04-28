@@ -86,15 +86,15 @@ backgroundImage="/web/1.webp"
               The T and T Universe
             </motion.span>
             
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight"
-            >
-              Diversified Excellence.
-              <br />
-              <span className="text-gold italic font-light">One Vision.</span>
-            </motion.h2>
+<motion.h2
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight font-[Poppins]"
+>
+  Diversified Excellence.
+  <br />
+  <span className="text-gold font-light">One Vision.</span>
+</motion.h2>
 
             <p className="text-slate-500 text-lg leading-relaxed">
               From building skylines to powering homes, we are committed to sustainable growth and premium service.

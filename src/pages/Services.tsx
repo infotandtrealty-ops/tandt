@@ -97,9 +97,9 @@ const Services = () => {
               <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium">
                 Real Estate Advisory | Gurgaon
               </span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                Advisory-First Real Estate Services   
-              </h2>
+<h2 className="text-3xl md:text-4xl font-bold text-foreground font-[Poppins]">
+  Advisory-First Real Estate Services   
+</h2>
               <p className="text-muted-foreground leading-relaxed">
                 T and T Realty offers comprehensive advisory services across the entire real estate lifecycle. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities.
               </p>
@@ -131,9 +131,9 @@ const Services = () => {
             <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
               Premium Solutions
             </span>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Comprehensive Advisory Services
-            </h2>
+<h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 font-[Poppins]">
+  Comprehensive Advisory Services
+</h2>
             <p className="text-muted-foreground">End-to-end expertise across residential, commercial, land, mixed-use, and investment assets.</p>
           </div>
 
@@ -187,9 +187,9 @@ const Services = () => {
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
-                Advisory First. Transaction Second.
-              </h2>
+<h2 className="text-3xl md:text-4xl font-bold text-primary-foreground font-[Poppins]">
+  Advisory First. Transaction Second.
+</h2>
               <p className="text-primary-foreground/80 leading-relaxed">
                 T and T Realty operates with an advisory-first approach. We do not push inventory—we curate outcomes. Our focus is on building long-term relationships through strategic clarity, market intelligence, and ethical practices.
               </p>
