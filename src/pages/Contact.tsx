@@ -77,11 +77,21 @@ const Contact = () => {
 
   return (
     <Layout>
-      <PageHeader
-        title="Contact Us"
-        subtitle="Get in touch with us for any inquiries or consultations"
-        breadcrumbs={[{ name: "Contact" }]}
-      />
+<PageHeader
+  title={
+    <h1
+      className="text-3xl md:text-5xl font-semibold text-[#ffffff] leading-snug"
+      style={{ fontFamily: 'Poppins, sans-serif' }}
+    >
+      Contact{" "}
+      <span className="text-gold  font-normal">
+        Us
+      </span>
+    </h1>
+  }
+  subtitle="Get in touch with us for any inquiries or consultations"
+  breadcrumbs={[{ name: "Contact" }]}
+/>
 
       <section className="section-padding">
         <div className="container-custom">
@@ -92,9 +102,15 @@ const Contact = () => {
                 <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
                   Get In Touch
                 </span>
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Contact Information
-                </h2>
+  <h2
+  className="text-2xl md:text-3xl font-semibold text-[#031916] leading-snug mb-4"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Contact{" "}
+  <span className="text-gold italic font-normal">
+    Information
+  </span>
+</h2>
                 <p className="text-muted-foreground">
                   Reach out to us for any real estate inquiries. Our team is ready to assist you.
                 </p>
@@ -151,9 +167,15 @@ const Contact = () => {
             {/* Form Section */}
             <div className="lg:col-span-2">
               <div className="bg-card rounded-2xl p-8 shadow-medium border border-border/50">
-                <h3 className="font-display text-2xl font-bold text-foreground mb-6">
-                  Send Us a Message
-                </h3>
+<h3
+  className="text-2xl font-semibold text-[#031916] leading-snug mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Send Us a{" "}
+  <span className="text-gold italic font-normal">
+    Message
+  </span>
+</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>

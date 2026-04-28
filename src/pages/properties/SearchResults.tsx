@@ -210,12 +210,12 @@ export default function SearchResults() {
       <p className="font-semibold text-black mb-4">
         {item.priceText}
       </p>
-      <a
-        href={`tel:${item.phone}`}
-        className="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold py-2 rounded-full mt-auto"
-      >
-        View Details
-      </a>
+<a
+  href="/contact"
+  className="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold py-2 rounded-full mt-auto"
+>
+  View Details
+</a>
     </div>
   </div>
 ))}
