@@ -71,9 +71,13 @@ const TestimonialSection = () => {
       <div className="w-full md:w-[45%] bg-[#031510] p-8 md:p-20 flex flex-col justify-center text-white relative">
         <span className="text-gray-400 text-sm mb-4 block font-medium">Testimonial</span>
         
-        <h2 className="font-display text-4xl md:text-6xl font-semibold leading-tight mb-8">
-          What Customers <br /> Say About Us
-        </h2>
+<h2
+  className="text-4xl md:text-6xl font-semibold leading-tight mb-8 tracking-tight"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  What Customers <br /> Say About Us
+</h2>
+
 
         <div className="flex gap-2 mb-8">
           <div className="w-12 h-[2px] bg-[#c69a39]"></div>

@@ -55,11 +55,13 @@ const PhilosophySection = () => {
                 </span>
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-8 leading-[1.1]">
-              Real Estate Is <span className="text-gold italic">Not a Deal.</span> <br />
-              It's a Portfolio.
-            </h2>
-            
+<h2
+  className="text-4xl md:text-6xl font-bold text-slate-900 mb-8 leading-[1.1]"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  Real Estate Is <span className="text-gold italic">Not a Deal.</span> <br />
+  It's a Portfolio.
+</h2>
             <p className="text-slate-500 text-lg md:text-xl mb-10 leading-relaxed max-w-xl">
               T and T Realty operates with a data-driven lens across all segments, ensuring every asset delivers long-term strategic value.
             </p>
@@ -106,32 +108,59 @@ const PhilosophySection = () => {
           </div>
         </div>
 
-        {/* FOUR PRINCIPLES CARDS */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {principles.map((principle, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: principle.delay }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
-              className="p-8 bg-slate-50 rounded-[2rem] border border-transparent hover:border-gold/20 hover:bg-white transition-all duration-500 group shadow-sm hover:shadow-xl"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-inner flex items-center justify-center mb-8 group-hover:bg-gold transition-colors duration-500">
-                <principle.icon className="w-7 h-7 text-slate-900 group-hover:text-white transition-colors" />
-              </div>
-              
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
-                {principle.title}
-              </h3>
-              
-              <p className="text-slate-500 text-sm leading-relaxed">
-                {principle.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+{/* FOUR PRINCIPLES CARDS */}
+<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  {principles.map((principle, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: principle.delay }}
+      viewport={{ once: true }}
+      whileHover={{ y: -10 }}
+      className="p-8 bg-slate-50 rounded-[2rem] border border-transparent hover:border-gold/20 hover:bg-white transition-all duration-500 group shadow-sm hover:shadow-xl"
+    >
+      <div className="w-14 h-14 rounded-2xl bg-white shadow-inner flex items-center justify-center mb-8 group-hover:bg-gold transition-colors duration-500">
+        <principle.icon className="w-7 h-7 text-slate-900 group-hover:text-white transition-colors" />
+      </div>
+      
+      <h3
+        className="text-xl font-semibold text-slate-900 mb-3 tracking-wide"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+        {principle.title}
+      </h3>
+      
+      <p className="text-slate-500 text-sm leading-relaxed">
+        {principle.description}
+      </p>
+    </motion.div>
+  ))}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
   );

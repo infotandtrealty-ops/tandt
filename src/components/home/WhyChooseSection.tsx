@@ -48,9 +48,12 @@ const WhyChooseSection = () => {
           <span className="inline-block px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium mb-4">
             Why Choose Us
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            Why Choose T and T Realty?
-          </h2>
+<h2
+  className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4 tracking-tight"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  Why Choose T and T Realty?
+</h2>
           <p className="text-primary-foreground/70 text-lg">
             Experience the difference of working with a team dedicated to turning your real estate aspirations into reality
           </p>
@@ -66,9 +69,12 @@ const WhyChooseSection = () => {
               <div className="w-14 h-14 rounded-xl bg-gradient-gold flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <reason.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-display text-xl font-semibold text-primary-foreground mb-3">
-                {reason.title}
-              </h3>
+<h3
+  className="text-xl font-semibold text-primary-foreground mb-3 tracking-wide"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {reason.title}
+</h3>
               <p className="text-primary-foreground/70 leading-relaxed">
                 {reason.description}
               </p>

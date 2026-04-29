@@ -54,30 +54,33 @@ const WhoWeServeSection = () => {
           </p>
         </div>
 
-        {/* CARDS */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {clients.map((client, index) => {
-            const Icon = client.icon;
-            return (
-              <div
-                key={index}
-                className="group border border-slate-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="text-gold" size={24} />
-                </div>
-
-                <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-gold transition">
-                  {client.title}
-                </h3>
-
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  {client.description}
-                </p>
-              </div>
-            );
-          })}
+{/* CARDS */}
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {clients.map((client, index) => {
+    const Icon = client.icon;
+    return (
+      <div
+        key={index}
+        className="group border border-slate-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+      >
+        <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+          <Icon className="text-gold" size={24} />
         </div>
+
+        <h3
+          className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-gold transition tracking-wide"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          {client.title}
+        </h3>
+
+        <p className="text-slate-500 text-sm leading-relaxed">
+          {client.description}
+        </p>
+      </div>
+    );
+  })}
+</div>
 
         {/* FOOTER */}
         <div className="mt-16 text-center">
