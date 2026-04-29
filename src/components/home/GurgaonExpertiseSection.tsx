@@ -29,12 +29,16 @@ const GurgaonExpertiseSection = () => {
               <MapPin size={12} />
               Delhi NCR & Gurgaon Expertise
             </div>
-            
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Deep Local Knowledge <br /> 
-              <span className="text-white">Across Delhi NCR.</span> <br />
-              <span className="text-gold font-light italic text-2xl md:text-4xl">Global Thinking.</span>
-            </h2>
+<h2
+  className="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight tracking-tight"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  Deep Local Knowledge <br /> 
+  <span className="text-white">Across Delhi NCR.</span> <br />
+  <span className="text-gold font-light italic text-2xl md:text-4xl">
+    Global Thinking.
+  </span>
+</h2>
             
             <p className="text-slate-400 text-base leading-relaxed mb-8 max-w-lg font-light">
               Our advisory is rooted in the evolving corridors of <span className="text-white font-medium">Delhi NCR and Gurgaon</span>. We track infrastructure developments and policy shifts across the capital region <span className="text-white font-medium italic underline decoration-gold/50">before they reflect publicly.</span>

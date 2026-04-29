@@ -60,9 +60,12 @@ const WhyClientsWorkSection = () => {
 
                   {/* Text Content */}
                   <div className="flex-grow">
-                    <h3 className="text-lg font-bold text-[#031916] group-hover:text-gold transition-colors leading-none mb-1">
-                      {reason.title}
-                    </h3>
+     <h3
+  className="text-lg font-semibold text-[#031916] group-hover:text-gold transition-colors leading-none mb-1 tracking-wide"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {reason.title}
+</h3>
                     <p className="text-slate-500 text-xs leading-tight line-clamp-1">
                       {reason.description}
                     </p>
