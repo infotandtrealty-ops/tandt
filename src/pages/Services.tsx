@@ -154,9 +154,12 @@ const Services = () => {
                     <service.icon className="w-6 h-6" />
                   </div>
                   
-                  <h3 className="font-display text-2xl font-bold text-white mb-3 transform transition-transform duration-500 group-hover:-translate-y-2">
-                    {service.title}
-                  </h3>
+<h3
+  className="text-2xl font-semibold text-white mb-3 transform transition-transform duration-500 group-hover:-translate-y-2"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {service.title}
+</h3>
                   
                   <p className="text-white/80 text-sm leading-relaxed opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-500 overflow-hidden">
                     {service.description}

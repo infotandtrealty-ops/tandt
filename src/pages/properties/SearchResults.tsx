@@ -192,9 +192,12 @@ export default function SearchResults() {
       <p className="text-xs text-orange-500 font-semibold uppercase mb-1">
         {item.developer}
       </p>
-      <h2 className="text-lg font-semibold leading-tight mb-2">
-        {item.title}
-      </h2>
+<h2
+  className="text-lg font-semibold leading-tight mb-2 tracking-wide"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {item.title}
+</h2>
       <p className="text-sm text-gray-500 mb-3">
         {item.subtitle}
       </p>

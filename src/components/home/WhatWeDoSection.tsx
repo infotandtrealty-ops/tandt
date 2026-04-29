@@ -64,9 +64,12 @@ const AssetCard = ({ asset, index }: any) => {
             <asset.icon className="w-6 h-6 text-gold group-hover:text-inherit" />
           </div>
 
-          <h3 className="font-display text-2xl font-bold mb-2 group-hover:text-gold transition-colors">
-            {asset.title}
-          </h3>
+<h3
+  className="text-2xl font-semibold mb-2 group-hover:text-gold transition-colors tracking-wide"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {asset.title}
+</h3>
 
           <p className="text-gray-300 text-sm leading-relaxed mb-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
             {asset.description}
@@ -102,9 +105,13 @@ const WhatWeDoSection = () => {
 We Are Happy
             </motion.span>
 
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            To <span className="text-gold">Serve</span>
-            </h2>
+<h2
+  className="text-4xl md:text-5xl font-bold text-foreground"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  To <span className="text-gold">Serve</span>
+</h2>
+            
           </div>
 
           <p className="text-muted-foreground max-w-sm pb-2">
@@ -134,9 +141,12 @@ We Are Happy
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-gold/10 blur-[100px] rounded-full pointer-events-none" />
 
           <div className="relative z-10 max-w-xl">
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to collaborate with us?
-            </h3>
+<h3
+  className="text-3xl font-semibold mb-4 tracking-tight"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  Ready to collaborate with us?
+</h3>
             <p className="text-gray-400">
               Whether you're a buyer, investor, or development partner — we
               are here to structure strategic opportunities tailored to your

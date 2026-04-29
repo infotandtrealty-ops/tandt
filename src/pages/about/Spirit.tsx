@@ -94,10 +94,23 @@ const Spirit = () => {
       {/* Values Grid */}
       <section className="py-24 bg-slate-50">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">The Pillars of Our Success</h2>
-            <div className="w-20 h-1 bg-gold mx-auto rounded-full" />
-          </div>
+
+
+
+
+<div className="text-center max-w-2xl mx-auto mb-16">
+  <h2
+    className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight"
+    style={{ fontFamily: "Poppins, sans-serif" }}
+  >
+    The Pillars of Our Success
+  </h2>
+
+  <div className="w-20 h-1 bg-gold mx-auto rounded-full" />
+</div>
+
+
+
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
@@ -106,8 +119,12 @@ const Spirit = () => {
                 className="bg-white border border-slate-100 p-8 rounded-2xl hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl group"
               >
                 <v.icon className="w-10 h-10 text-gold mb-6 group-hover:scale-110 transition-transform" />
-                <h4 className="text-lg font-bold text-slate-900 mb-2">{v.name}</h4>
-                <p className="text-sm text-slate-500 leading-relaxed">{v.desc}</p>
+<h4
+  className="text-lg font-semibold text-slate-900 mb-2 tracking-wide"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  {v.name}
+</h4>                <p className="text-sm text-slate-500 leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -122,9 +139,12 @@ const Spirit = () => {
         
         <div className="container-custom relative z-10">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-12 md:p-16 rounded-[40px] text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
-              Experience the T and T Spirit
-            </h2>
+<h2
+  className="text-3xl md:text-5xl font-semibold text-white mb-8 tracking-tight"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  Experience the T and T Spirit
+</h2>
             <p className="text-white/60 text-lg mb-10">
               Whether you are an investor, developer, or end user, let's build <br className="hidden md:block" /> a transparent future together.
             </p>
