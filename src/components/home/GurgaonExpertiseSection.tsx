@@ -87,7 +87,7 @@ const GurgaonExpertiseSection = () => {
               className="absolute -bottom-6 -left-6 bg-gold p-5 rounded-xl shadow-xl z-20"
             >
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-black text-[#031916]">15</span>
+                <span className="text-3xl font-black text-[#031916]">10</span>
                 <span className="text-xl font-bold text-[#031916]">+</span>
               </div>
               <p className="text-[#031916] font-bold text-[10px] uppercase leading-none mt-1">
