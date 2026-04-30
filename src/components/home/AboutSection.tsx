@@ -26,7 +26,7 @@ const AboutSection = () => {
                 className="w-full rounded-2xl shadow-medium"
               />
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-gold rounded-xl p-4 shadow-gold hidden md:flex flex-col justify-center">
-                <span className="font-display text-4xl font-bold text-primary">15+</span>
+                <span className="font-display text-4xl font-bold text-primary">10+</span>
                 <span className="text-primary/80 font-medium">Years of Excellence</span>
               </div>
             </div>

@@ -57,7 +57,7 @@ const Spirit = () => {
                 At T and T Realty, we believe that real estate isn't just about brick and mortar; it's about the <span className="text-slate-900 font-semibold underline decoration-gold/40">long-term legacy</span> we build with our partners and clients.
               </p>
               <div className="flex items-center gap-4 py-4 border-y border-slate-100 mt-10">
-                <div className="text-4xl font-bold text-gold">15+</div>
+                <div className="text-4xl font-bold text-gold">10+</div>
                 <div className="text-sm font-semibold uppercase tracking-widest text-slate-400">
                   Years of Corporate <br />Excellence
                 </div>

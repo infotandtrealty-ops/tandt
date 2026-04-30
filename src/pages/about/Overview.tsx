@@ -65,7 +65,7 @@ const Overview = () => {
                 className="w-full rounded-2xl shadow-medium"
               />
               <div className="absolute -bottom-6 -left-6 bg-gradient-gold rounded-xl p-6 shadow-gold">
-                <span className="font-display text-4xl font-bold text-primary block">15+</span>
+                <span className="font-display text-4xl font-bold text-primary block">10+</span>
                 <span className="text-primary/80">Years Experience</span>
               </div>
             </div>
