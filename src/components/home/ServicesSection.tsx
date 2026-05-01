@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    image: "/inv/1.webp", // Path from public folder
+    image: "/inv/1.jpeg", // Path from public folder
     title: "Our Buyers",
     description: "We understand your dreams and necessities and bring them to reality by offering the ideal home that you have always longed for.",
   },

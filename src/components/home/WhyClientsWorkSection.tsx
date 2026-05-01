@@ -31,7 +31,7 @@ const WhyClientsWorkSection = () => {
   style={{ fontFamily: 'Poppins, sans-serif' }}
 >
   Advisory First.{" "}
-  <span className="text-gold italic font-normal">
+  <span className="text-gold  font-normal">
     Transaction Second.
   </span>
 </h2>

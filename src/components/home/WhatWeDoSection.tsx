@@ -15,7 +15,7 @@ const assetClasses = [
     title: "Our Buyers",
     description:
       "We understand your dreams and necessities and bring them to reality by offering the ideal home that you have always longed for.",
-    image: "/projects/1.webp",
+    image: "/inv/1.jpeg",
   },
   {
     icon: TrendingUp,
