@@ -211,9 +211,12 @@ const Blogs = () => {
                     <Calendar className="w-4 h-4" />
                     {blog.date}
                   </div>
-                  <h3 className="font-display font-semibold text-lg text-foreground mb-3 group-hover:text-gold transition-colors line-clamp-2">
-                    {blog.title}
-                  </h3>
+<h3
+  className="font-semibold text-lg text-foreground mb-3 group-hover:text-gold transition-colors line-clamp-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {blog.title}
+</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
                     {blog.excerpt}
                   </p>
