@@ -44,21 +44,21 @@ const jobOpenings = [
     ],
   },
   {
-    title: "Telecaller / Relationship Executive",
+    title: "Client Relationship Executive / Tele Sales Executive",
     location: "Gurgaon",
     type: "Full-time",
     department: "Customer Support & Sales",
     description: "We are hiring Telecallers to manage leads, follow up with clients, and generate site visit appointments for the sales team.",
     responsibilities: [
-      "Call and follow up with leads from CRM",
+      "Follow up with Leads from CRM",
       "Explain basic project details to clients",
-      "Schedule site visits for sales team",
+      "Schedule site visits",
       "Maintain proper lead records and updates"
     ],
     requirements: [
-      "Good Hindi communication (English basic required)",
+      "Good Communication Skills",
       "Confident speaking and convincing ability",
-      "Fresher & experienced both can apply",
+      "Fresher & Experienced both can apply",
     ],
   },
 ];
@@ -239,7 +239,7 @@ const Careers = () => {
   Ready to lead the market?
 </h2>          <p className="text-white/60 mb-10 max-w-xl mx-auto">
             All applications are treated with strict confidentiality. 
-            Join a team where values matter as much as value.
+       <br />   Be part of a culture where values shape success.
           </p>
           <a href="mailto:careers@T and Trealty.com">
             <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-white rounded-full px-12 h-14">
