@@ -125,9 +125,12 @@ backgroundImage="/web/1.webp"
                     <company.icon size={32} strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-gold transition-colors duration-300">
-                      {company.name}
-                    </h3>
+     <h3
+  className="text-2xl font-bold text-slate-900 group-hover:text-gold transition-colors duration-300"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {company.name}
+</h3>
                   </div>
                 </div>
 
