@@ -49,8 +49,12 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6 text-gold">Quick Links</h4>
-            <ul className="space-y-3">
+<h4
+  className="font-semibold text-lg mb-6 text-gold"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Quick Links
+</h4>            <ul className="space-y-3">
               {[
                 { name: "Home", href: "/" },
                 { name: "About Us", href: "/about/overview" },
