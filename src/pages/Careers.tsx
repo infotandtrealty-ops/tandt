@@ -182,9 +182,12 @@ const Careers = () => {
                   <div className="p-8 pt-0 border-t border-slate-50">
                     <div className="grid md:grid-cols-2 gap-10 mt-8">
                       <div>
-                        <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
-                          <Check className="text-gold" /> Responsibilities
-                        </h4>
+                 <h4
+  className="font-bold text-lg mb-4 flex items-center gap-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  <Check className="text-gold" /> Responsibilities
+</h4>
                         <ul className="space-y-3">
                           {job.responsibilities.map((r, i) => (
                             <li key={i} className="text-muted-foreground text-sm flex items-start gap-2">
@@ -195,9 +198,12 @@ const Careers = () => {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
-                          <Check className="text-gold" /> Requirements
-                        </h4>
+           <h4
+  className="font-bold text-lg mb-4 flex items-center gap-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  <Check className="text-gold" /> Requirements
+</h4>
                         <ul className="space-y-3">
                           {job.requirements.map((r, i) => (
                             <li key={i} className="text-muted-foreground text-sm flex items-start gap-2">
