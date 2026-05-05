@@ -128,9 +128,12 @@ const Videos = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="font-display text-xl font-bold text-foreground group-hover:text-gold transition-colors duration-300 line-clamp-2">
-                    {video.title}
-                  </h3>
+             <h3
+  className="text-xl font-bold text-foreground group-hover:text-gold transition-colors duration-300 line-clamp-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {video.title}
+</h3>
                   <div className="mt-4 flex items-center text-gold text-sm font-bold group-hover:gap-3 transition-all duration-300">
                     WATCH NOW <div className="h-px w-8 bg-gold/40" />
                   </div>
