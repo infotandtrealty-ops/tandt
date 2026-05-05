@@ -169,7 +169,7 @@ export default function SearchResults() {
   style={{ fontFamily: 'Poppins, sans-serif' }}
 >
   Projects
-</h1>          <p className="text-sm">Home &gt; Properties</p>
+</h1>        
         </div>
       </div>
 
@@ -221,7 +221,7 @@ export default function SearchResults() {
   href="/contact"
   className="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold py-2 rounded-full mt-auto"
 >
-  View Details
+  Contact Us
 </a>
     </div>
   </div>
