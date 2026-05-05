@@ -9,7 +9,7 @@ const highlights = [
   "Due diligence to examine all transactions",
   "Inclusive management that allows participation for all",
   "Multiple investment options with premium inventory",
-  "Strategic locations of assets to increase investment value",
+  "Strategic location of assets to increase investment value",
   "An ever-expanding group of Top Real Estate Professionals",
 ];
 

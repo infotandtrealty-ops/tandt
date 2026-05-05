@@ -144,23 +144,7 @@ backgroundImage="/web/1.webp"
       </section>
 
       {/* Stats Summary Bar - UPDATED COLOR TO GREEN #031916 */}
-      <section className="py-16 bg-[#031916]">
-        <div className="container px-6 mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {[
-              { label: "Founded", val: "2014" },
-              { label: "Industries", val: "04" },
-              { label: "Happy Clients", val: "10k+" },
-              { label: "Presence", val: "Pan India" }
-            ].map((stat, i) => (
-              <div key={i}>
-                <p className="text-gold text-3xl font-bold mb-1">{stat.val}</p>
-                <p className="text-slate-100/50 text-[10px] uppercase tracking-[0.2em] font-bold">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+ 
     </Layout>
   );
 };
