@@ -84,7 +84,7 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-white/80 mt-3 md:mt-4 max-w-2xl text-base md:text-lg">
-                T and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets.
+                PT and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
