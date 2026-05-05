@@ -105,11 +105,11 @@ const Services = () => {
                 Real Estate Advisory | Gurgaon
               </span>
 <h2 className="text-3xl md:text-4xl font-bold text-foreground font-[Poppins]">
-  Advisory-First Real Estate Services   
+  Comprehensive Advisory Services
 </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                T and T Realty offers comprehensive advisory services across the entire real estate lifecycle. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities.
-              </p>
+      <p className="text-muted-foreground leading-relaxed">
+  <span className="font-bold">T and T Realty</span> offers comprehensive advisory services across the entire real estate lifecycle. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities.
+</p>
               <p className="text-muted-foreground leading-relaxed">
                 Our approach is strategy-driven, not asset-specific. Every opportunity is evaluated through market intelligence, policy clarity, and capital alignment to ensure optimal outcomes for our clients.
               </p>
@@ -138,11 +138,10 @@ const Services = () => {
             <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
               Premium Solutions
             </span>
-<h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 font-[Poppins]">
-  Comprehensive Advisory Services
-</h2>
-            <p className="text-muted-foreground">End-to-end expertise across residential, commercial, land, mixed-use, and investment assets.</p>
-          </div>
+
+<p className="text-muted-foreground font-bold">
+  We offer end-to-end expertise across Residential, Commercial, Land, Mixed-Use, and <br /> Investment assets.
+</p>          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -168,9 +167,7 @@ const Services = () => {
   {service.title}
 </h3>
                   
-                  <p className="text-white/80 text-sm leading-relaxed opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-500 overflow-hidden">
-                    {service.description}
-                  </p>
+           
                   
                   <Link 
                     to="/contact" 
