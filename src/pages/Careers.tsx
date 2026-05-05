@@ -140,7 +140,7 @@ const Careers = () => {
   </span>
 </h2>            </div>
             <div className="text-muted-foreground hidden md:block italic">
-              Don't see a fit? Email us at <span className="text-foreground font-semibold">careers@TandTrealty.com</span>
+              Apply for this position -&nbsp;<span className="text-foreground font-semibold">careers@tandtrealty.com</span>
             </div>
           </div>
 
