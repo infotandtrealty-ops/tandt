@@ -28,14 +28,24 @@ const directors = [
 const Directors = () => {
   return (
     <Layout>
-      <PageHeader
-        title="Director's Message"
-        subtitle="Tradition of trust and transparency"
-        breadcrumbs={[
-          { name: "About Us", href: "/about/overview" },
-          { name: "Director's Message" },
-        ]}
-      />
+<PageHeader
+  title={
+    <h1
+      className="text-3xl md:text-5xl font-semibold text-[#ffffff] leading-snug"
+      style={{ fontFamily: 'Poppins, sans-serif' }}
+    >
+      Director's{" "}
+      <span className="text-gold font-normal">
+        Message
+      </span>
+    </h1>
+  }
+  subtitle="Tradition of trust and transparency"
+  breadcrumbs={[
+    { name: "About Us", href: "/about/overview" },
+    { name: "Director's Message" },
+  ]}
+/>
 
       <section className="py-20 bg-background">
         <div className="container-custom">
@@ -76,9 +86,12 @@ const Directors = () => {
                     <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-bold tracking-tighter rounded-md mb-4 uppercase">
                       Director Profile
                     </span>
-                    <h3 className="font-display text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-                      {director.name}
-                    </h3>
+ <h3
+  className="text-4xl md:text-5xl font-bold text-foreground tracking-tight"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {director.name}
+</h3>
                     <p className="text-gold text-xl font-medium mt-2 italic">
                       {director.role}
                     </p>
@@ -93,9 +106,12 @@ const Directors = () => {
                   
                   {/* Digital Signature / Brand Element */}
                   <div className="pt-8 border-t border-border">
-                    <p className="font-display text-2xl text-foreground/50 italic opacity-50">
-                      T and T Realty Group
-                    </p>
+<p
+  className="text-2xl text-foreground/50 italic opacity-50"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  T and T Realty Group
+</p>
                   </div>
                 </div>
               </div>

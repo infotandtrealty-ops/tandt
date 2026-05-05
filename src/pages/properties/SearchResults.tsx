@@ -164,8 +164,12 @@ export default function SearchResults() {
   {/* Overlay for dark effect */}
   <div className="absolute inset-0"></div>
           <div className="container-custom text-center text-white">
-          <h1 className="text-3xl font-bold mb-2">Projects</h1>
-          <p className="text-sm">Home &gt; Properties</p>
+<h1
+  className="text-3xl font-bold mb-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Projects
+</h1>          <p className="text-sm">Home &gt; Properties</p>
         </div>
       </div>
 

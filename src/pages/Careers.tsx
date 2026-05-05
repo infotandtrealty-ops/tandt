@@ -71,11 +71,18 @@ const Careers = () => {
 
   return (
     <Layout>
-      <PageHeader
-        title="Careers"
-        subtitle="Build Expertise. Shape Markets. Think Long-Term."
-        breadcrumbs={[{ name: "Careers" }]}
-      />
+<PageHeader
+  title={
+    <h1
+      className="text-3xl md:text-5xl font-semibold text-[#ffffff] leading-snug"
+      style={{ fontFamily: 'Poppins, sans-serif' }}
+    >
+      Careers
+    </h1>
+  }
+  subtitle="Build Expertise. Shape Markets. Think Long-Term."
+  breadcrumbs={[{ name: "Careers" }]}
+/>
 
       {/* Hero Intro */}
       <section className="pt-20 pb-10">

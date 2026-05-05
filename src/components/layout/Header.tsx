@@ -213,9 +213,12 @@ const Header = () => {
                       <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase block mb-4">
                         What We Do
                       </span>
-                      <h3 className="text-4xl font-display font-bold text-white leading-[1.1] mb-6">
-                        Our <br />Services
-                      </h3>
+<h3
+  className="text-4xl font-bold text-white leading-[1.1] mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Our <br />Services
+</h3>
                       <p className="text-white/50 text-sm leading-relaxed max-w-xs">
                         Comprehensive real estate solutions across commercial, residential, and land sectors.
                       </p>
@@ -304,11 +307,14 @@ const Header = () => {
                       <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase block mb-4">
                         Explore Portfolio
                       </span>
-                      <h3 className="text-5xl font-display font-bold text-white leading-[1.1] mb-6">
-                        {activeMegaMenu === "about" && <>The <br />T and T Spirit</>}
-                        {activeMegaMenu === "projects" && <>Premium <br />Assets</>}
-                        {activeMegaMenu === "media" && <>Market <br />Intelligence</>}
-                      </h3>
+<h3
+  className="text-5xl font-bold text-white leading-[1.1] mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {activeMegaMenu === "about" && <>The <br />T and T Spirit</>}
+  {activeMegaMenu === "projects" && <>Premium <br />Assets</>}
+  {activeMegaMenu === "media" && <>Market <br />Intelligence</>}
+</h3>
                       <p className="text-white/50 text-sm leading-relaxed max-w-xs">
                          {activeMegaMenu === "media" ? "Stay updated with the latest trends and data-driven insights in Gurgaon real estate." : "Discover our legacy of trust and excellence."}
                       </p>
