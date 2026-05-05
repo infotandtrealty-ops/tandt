@@ -32,7 +32,7 @@ const jobOpenings = [
     department: "Sales",
     description: "We are looking for a dynamic Sales Executive to handle property sales, client meetings, and site visits. You will be responsible for converting leads into successful deals.",
     responsibilities: [
-      "Handle inbound and outbound property inquiries",
+      "Handle inbound and outbound Project inquiries",
       "Conduct site visits with clients",
       "Explain project details and investment benefits",
       "Close deals and achieve sales targets"
@@ -98,8 +98,8 @@ const Careers = () => {
   </span>
 </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              At T and T Realty, we look for individuals who think analytically, understand markets (not just listings), 
-              value ethics, and are comfortable working with HNIs and institutional capital.
+              At T and T Realty, we look for individuals who think analytically, understand markets and
+              value ethics.
             </p>
           </div>
         </div>
@@ -162,8 +162,12 @@ const Careers = () => {
                       <Briefcase className="w-4 h-4 text-gold" />
                       <span className="text-xs font-bold text-gold uppercase tracking-tighter">{job.department}</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground">{job.title}</h3>
-                    <div className="flex gap-4 mt-2 text-sm text-muted-foreground">
+<h3
+  className="text-2xl font-bold text-foreground"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {job.title}
+</h3>                    <div className="flex gap-4 mt-2 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> {job.location}</span>
                       <span>•</span>
                       <span>{job.type}</span>

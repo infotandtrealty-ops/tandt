@@ -17,14 +17,7 @@ interface Company {
 }
 
 const companies: Company[] = [
-  {
-    icon: Building2,
-    sector: "Real Estate & Consulting",
-    name: "T and T Realty Services Pvt. Ltd.",
-    description: "A leading consulting firm driving social and economic growth. We safeguard the future by creating a brighter world for customers and the environment through strategic real estate solutions.",
-    color: "gold",
-    accent: "bg-gold/10 text-gold",
-  },
+
   {
     icon: Sparkles,
     sector: "Health & Aesthetics",
