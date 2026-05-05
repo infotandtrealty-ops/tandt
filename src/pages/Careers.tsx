@@ -112,8 +112,12 @@ const Careers = () => {
             {benefits.map((item, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-gold transition-colors group">
                 <item.icon className="w-10 h-10 text-gold mb-4 group-hover:scale-110 transition-transform" />
-                <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+<h4
+  className="font-bold text-lg mb-2"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  {item.title}
+</h4>                <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -218,8 +222,12 @@ const Careers = () => {
       {/* Elegant CTA */}
       <section className="py-20 bg-[#031916] text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Ready to lead the market?</h2>
-          <p className="text-white/60 mb-10 max-w-xl mx-auto">
+<h2
+  className="text-3xl md:text-5xl font-bold mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Ready to lead the market?
+</h2>          <p className="text-white/60 mb-10 max-w-xl mx-auto">
             All applications are treated with strict confidentiality. 
             Join a team where values matter as much as value.
           </p>
