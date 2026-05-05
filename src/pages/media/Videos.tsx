@@ -77,7 +77,7 @@ const Videos = () => {
               </span>
             </motion.div>
 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-[Poppins]">
-  Watch Our <span className="text-gold">Success</span> Stories
+  Leaders <span className="text-gold">Speak...</span> 
 </h2>
             <div className="h-1 w-20 bg-gold mx-auto rounded-full" />
           </div>
@@ -128,12 +128,7 @@ const Videos = () => {
 
                 {/* Content */}
                 <div className="p-6">
-             <h3
-  className="text-xl font-bold text-foreground group-hover:text-gold transition-colors duration-300 line-clamp-2"
-  style={{ fontFamily: 'Poppins, sans-serif' }}
->
-  {video.title}
-</h3>
+       
                   <div className="mt-4 flex items-center text-gold text-sm font-bold group-hover:gap-3 transition-all duration-300">
                     WATCH NOW <div className="h-px w-8 bg-gold/40" />
                   </div>
