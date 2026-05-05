@@ -54,42 +54,7 @@ const blogs: Blog[] = [
     date: "Mar 31, 2024",
     image: "https://www.a2zproperty.in/Gujarat/Rajkot/sapphire-heights/image-40085-2.jpg",
   },
-  {
-    title: "What is OC full form and its relevance in real estate",
-    excerpt: "The term 'OC' (Occupancy Certificate) is of paramount importance, but it usually remains unclear to a significant number of property buyers.",
-    date: "Mar 30, 2024",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-  },
-  {
-    title: "Your Ultimate Guide for Vastu for Home",
-    excerpt: "Congrats! You have found the best residential property in Gurgaon. Now, it is time to consider Vastu for harmony and prosperity.",
-    date: "Mar 18, 2024",
-    image: "https://vastublessings.in/wp-content/uploads/2025/12/Vastu-Consultant-in-Gurgaon-1024x572.webp",
-  },
-  {
-    title: "Difference between SCO plots and commercial plots",
-    excerpt: "Embarking on a real estate investment journey necessitates a comprehensive understanding of SCO (Shop-cum-Office) versus traditional plots.",
-    date: "Feb 27, 2024",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800",
-  },
-  {
-    title: "6 Types of Commercial Real Estate Property",
-    excerpt: "From retail shops to large Grade-A offices, commercial real estate offers diverse opportunities for business growth and rental yield.",
-    date: "Jan 23, 2024",
-    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800",
-  },
-  {
-    title: "10 Best Residential Areas to live in Gurgaon in 2024",
-    excerpt: "As 2024 unfolds, the city beckons with promise and potential, offering an array of neighborhoods catering to diverse lifestyle needs.",
-    date: "Dec 27, 2023",
-    image: "https://www.propertyxpo.com/assets/img/residential.jpg",
-  },
-  {
-    title: "Plot vs Flat: Which is the best option to buy?",
-    excerpt: "It's like standing at a crossroads. We compare the flexibility of plots versus the convenience of luxury flats in the NCR market.",
-    date: "Nov 29, 2023",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
-  }
+
 ];
 
 
