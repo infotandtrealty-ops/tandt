@@ -75,12 +75,19 @@ const Services = () => {
       {/* --- NEW SECTION ADDED HERE --- */}
       <section className="bg-[#031916] py-12 border-b border-white/10">
         <div className="container-custom text-center">
-          <h2 className="text-white text-3xl md:text-4xl font-bold mb-8">What We Offer:</h2>
-          
+<h2
+  className="text-white text-3xl md:text-4xl font-bold mb-8"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  What We Offer:
+</h2>          
           <div className="bg-[#D4AF37] py-4 px-8 rounded-sm inline-block w-full max-w-4xl mb-8">
-            <h4 className="text-[#031916] font-bold text-sm md:text-lg uppercase tracking-widest">
-              Expert Guidance | Exclusive Portfolio Management | Short & Long Term Wealth Creation
-            </h4>
+<h4
+  className="text-[#031916] font-bold text-sm md:text-lg uppercase tracking-widest"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Expert Guidance | Exclusive Portfolio Management | Short & Long Term Wealth Creation
+</h4>
           </div>
 
           <p className="text-white text-xl md:text-2xl font-medium leading-relaxed max-w-4xl mx-auto">
