@@ -34,16 +34,16 @@ const Directors = () => {
       className="text-3xl md:text-5xl font-semibold text-[#ffffff] leading-snug"
       style={{ fontFamily: 'Poppins, sans-serif' }}
     >
-      Director's{" "}
+      Our{" "}
       <span className="text-gold font-normal">
-        Message
+        Managment
       </span>
     </h1>
   }
   subtitle="Tradition of trust and transparency"
   breadcrumbs={[
     { name: "About Us", href: "/about/overview" },
-    { name: "Director's Message" },
+    { name: "Our Management" },
   ]}
 />
 

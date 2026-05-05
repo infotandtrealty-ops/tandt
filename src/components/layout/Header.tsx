@@ -31,7 +31,7 @@ const Header = () => {
       { label: "Overview", link: "/about/overview" },
       { label: "T and T Spirit", link: "/about/spirit" },
       { label: "Group Companies", link: "/about/group-companies" },
-      { label: "Director's Message", link: "/about/directors" }
+      { label: "Our Management", link: "/about/directors" }
     ],
     services: [
       { label: "All Services", link: "/services" },
