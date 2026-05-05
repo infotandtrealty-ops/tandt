@@ -96,15 +96,7 @@ const PhilosophySection = () => {
             </motion.div>
 
             {/* Floating Glass Card */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="absolute -bottom-10 -right-6 md:right-10 bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 z-20 max-w-xs hidden sm:block"
-            >
-                <CheckCircle className="text-gold mb-4" size={32} />
-                <p className="text-slate-900 font-bold text-lg mb-1 tracking-tight">Institutional Quality</p>
-                <p className="text-slate-500 text-sm leading-relaxed">We apply private equity-grade rigor to every single real estate transaction.</p>
-            </motion.div>
+   
           </div>
         </div>
 

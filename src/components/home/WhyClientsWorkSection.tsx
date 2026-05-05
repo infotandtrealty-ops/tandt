@@ -106,10 +106,7 @@ const WhyClientsWorkSection = () => {
                   <div className="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-[#031916]">
                     <Target size={16} />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-sm leading-tight">Structured Success</h4>
-                    <p className="text-white/60 text-[10px] uppercase tracking-wider">Strategic Alignment First</p>
-                  </div>
+        
                 </div>
               </div>
             </motion.div>
