@@ -43,9 +43,9 @@ const Overview = () => {
 >
   About T and T Realty
 </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                T and T Realty is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities with long-term vision.
-              </p>
+        <p className="text-muted-foreground leading-relaxed">
+  <span className="font-bold">T and T Realty</span> is a Gurgaon-based real estate advisory firm offering end-to-end expertise across residential, commercial, land, mixed-use, and investment assets. We work with developers, HNIs, investors, family offices, and landowners to identify, structure, and manage high-value real estate opportunities with long-term vision.
+</p>
               <p className="text-muted-foreground leading-relaxed">
                 T and T, the name being derived from the <span className="text-gold font-semibold">Trust</span> of its stakeholders and <span className="text-gold font-semibold">Transparency</span> that it adheres to in all its transactions. With more than 15 years of Professional and Corporate experience, our founders in the world of Real Estate and Infrastructure have acquired in-depth knowledge of projects, markets, and strategic solutions.
               </p>
@@ -81,9 +81,12 @@ const Overview = () => {
               <span className="inline-block px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium mb-4">
                 Business Collaborator Programme
               </span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-                Join the Revolution
-              </h2>
+<h2
+  className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6"
+  style={{ fontFamily: 'Poppins, sans-serif' }}
+>
+  Join the Revolution
+</h2>
               <p className="text-primary-foreground/80 leading-relaxed mb-6">
                 T and T Realty's Business Collaborator Programme is an initiative to gather all the enthusiastic, passionate & goal-oriented Real Estate Professionals under a single umbrella and become a one-stop solution for any & every real estate requirement.
               </p>

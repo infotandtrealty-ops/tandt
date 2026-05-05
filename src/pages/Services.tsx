@@ -194,10 +194,10 @@ const Services = () => {
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-<h2 className="text-3xl md:text-4xl font-bold text-primary-foreground font-[Poppins]">
+<h2 className="text-3xl md:text-4xl font-bold text-gold font-[Poppins]">
   Advisory First. Transaction Second.
 </h2>
-              <p className="text-primary-foreground/80 leading-relaxed">
+       <p className="text-primary-foreground/80 leading-relaxed">
                 T and T Realty operates with an advisory-first approach. We do not push inventory—we curate outcomes. Our focus is on building long-term relationships through strategic clarity, market intelligence, and ethical practices.
               </p>
               <p className="text-primary-foreground/80 leading-relaxed">

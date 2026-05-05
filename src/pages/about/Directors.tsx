@@ -6,13 +6,13 @@ const directors = [
 
   {
     name: "Mr. Ashish Thapar",
-    role: "Director - T and T Realty",
+    role: "Managing Director - T and T Realty",
     image: "/ceo/ashish.webp",
     bio: "Mr. Ashish Thapar, the Managing Director of the company has nearly two decades of experience in Real Estate, Manufacturing and Foreign Trade as well. He has been associated with the company since its inception as a promoter. He is responsible for the overall working of the Company and has been instrumental in taking major policy decisions of the Company. A young business visionary having an extensive background and experience in Strategic Planning, Project Design, Structuring Operations, Export Marketing, Collaborations & Joint Ventures, and Business Expansion. An Engineer by Qualification, Mr. Thapar has entrepreneurial interests vested in Energy, Commodity Trade, and also in Health & Wellness Sector, successfully leading the T and T Group towards success. With a Vision to provide Quality Living, Efficient Work Spaces along with Growth Oriented Investment Planning, Mr. Thapar is committed to establish Trust with our patrons and Transparency in the Real Estate Sector.",
   },
   {
     name: "Mr. Gurpreet Singh Ratra",
-    role: "Director - T and T Realty",
+    role: " Executive Director  - T and T Realty",
     image: "/ceo/gurpreet.webp",
     bio: "Mr. Gurpreet S Ratra, the Executive Director of the company has corporate experience of nearly 20 years with the leading Real Estate Companies of India. His association with the company dates back to the inception as a promoter. He is responsible for all the policy and executionary decisions regarding Sales, Business Development, Customer Relations and finance. A young business leader, enriching the company with his vast Industry experience and expertise in market & business knowledge, product design, sales & leasing strategy valuable customer experience, and developing business plans for the growth of company. An MBA by qualification, Mr. Ratra has ventured into health & wellness sector as well using his entrepreneurial skills, driving the group companies to greater heights. He is committed towards the Vision to contribute towards creating a Real Estate Market which is Fair for all the stakeholders using Futuristic approach and Innovative yet Ethical practices.",
   },
