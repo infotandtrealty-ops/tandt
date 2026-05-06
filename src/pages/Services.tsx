@@ -68,7 +68,7 @@ const Services = () => {
     </span>
   }
   subtitle="Comprehensive real estate solutions tailored to your unique needs"
-  backgroundImage="/web/1.webp"
+  backgroundImage="/advisory.jpeg"
   breadcrumbs={[{ name: "Services" }]}
 />
 

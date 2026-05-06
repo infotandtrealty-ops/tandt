@@ -72,11 +72,11 @@ const GurgaonExpertiseSection = () => {
               transition={{ duration: 0.8 }}
               className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10"
             >
-              <img
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800"
-                alt="Delhi NCR Real Estate"
-                className="w-full max-h-[450px] object-cover hover:scale-105 transition-transform duration-700"
-              />
+<img
+  src="/local.jpeg"
+  alt="Delhi NCR Real Estate"
+  className="w-full h-[350px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-700"
+/>
               <div className="absolute inset-0 bg-gradient-to-t from-[#031916]/80 via-transparent to-transparent" />
             </motion.div>
 

@@ -82,6 +82,8 @@ const Careers = () => {
   }
   subtitle="Build Expertise. Shape Markets. Think Long-Term."
   breadcrumbs={[{ name: "Careers" }]}
+  backgroundImage="/career.jpeg"
+
 />
 
       {/* Hero Intro */}
