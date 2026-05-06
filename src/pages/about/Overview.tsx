@@ -23,6 +23,8 @@ const Overview = () => {
     </span>
   }
   subtitle="Tradition of trust and transparency"
+  backgroundImage="/wo-we-are.jpeg"
+
   breadcrumbs={[
     { name: "About Us", href: "/about/overview" },
     { name: "Overview" },

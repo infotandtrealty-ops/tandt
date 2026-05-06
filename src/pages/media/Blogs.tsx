@@ -85,9 +85,12 @@ const Blogs = () => {
     </span>
   }
   subtitle="Market Intelligence. Strategic Perspectives. Gurgaon Focus."
+  backgroundImage="/media.jpeg"
+
   breadcrumbs={[
     { name: "Media", href: "/media/videos" },
     { name: "Blogs" },
+    
   ]}
 />
 

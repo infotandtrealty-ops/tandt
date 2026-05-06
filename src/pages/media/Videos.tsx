@@ -55,6 +55,7 @@ const Videos = () => {
     </span>
   }
   subtitle="Visual walkthroughs of our landmark developments"
+  backgroundImage="/media.jpeg"
   breadcrumbs={[
     { name: "Media", href: "/media/videos" },
     { name: "Video Gallery" },

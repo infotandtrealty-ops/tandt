@@ -17,47 +17,53 @@ const services = [
   {
     icon: Building,
     title: "Real Estate Portfolio Advisory",
-    description: "Comprehensive portfolio management and strategic advisory across all asset classes to optimize returns and minimize risk.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Comprehensive portfolio management and strategic advisory across all asset classes to optimize returns and minimize risk.",
+    image: "333.jpeg",
   },
   {
     icon: TrendingUp,
     title: "Asset Acquisition & Disposition",
-    description: "Strategic guidance for acquiring and disposing of real estate assets with market intelligence and due diligence.",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop",
+    description:
+      "Strategic guidance for acquiring and disposing of real estate assets with market intelligence and due diligence.",
+    image: "444.jpeg",
   },
   {
     icon: Map,
     title: "Development Advisory",
-    description: "End-to-end advisory for development projects from concept to completion, including feasibility and market positioning.",
-    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2026&auto=format&fit=crop",
+    description:
+      "End-to-end advisory for development projects from concept to completion, including feasibility and market positioning.",
+    image: "222.jpeg",
   },
   {
     icon: BarChart3,
     title: "Investment Structuring",
-    description: "Sophisticated investment structuring for HNIs, family offices, and institutional investors across asset classes.",
-    image: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1974&auto=format&fit=crop",
+    description:
+      "Sophisticated investment structuring for HNIs, family offices, and institutional investors across asset classes.",
+    image: "111.jpeg",
   },
   {
     icon: FileSearch,
     title: "Land Advisory",
-    description: "Specialized vertical for raw land, aggregation parcels, joint development opportunities, and policy analysis.",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Specialized vertical for raw land, aggregation parcels, joint development opportunities, and policy analysis.",
+    image: "777.jpeg",
   },
   {
     icon: Calculator,
     title: "Market Research & Due Diligence",
-    description: "Data-driven market intelligence, feasibility studies, and comprehensive due diligence for informed decision-making.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Data-driven market intelligence, feasibility studies, and comprehensive due diligence for informed decision-making.",
+    image: "666.jpeg",
   },
   {
     icon: Store,
     title: "Joint Development & Strategic Alliances",
-    description: "Structuring joint development agreements and strategic alliances between developers, landowners, and investors.",
-    image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Structuring joint development agreements and strategic alliances between developers, landowners, and investors.",
+    image: "555.jpeg",
   },
 ];
-
 const Services = () => {
   return (
     <Layout>
