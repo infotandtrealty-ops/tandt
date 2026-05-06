@@ -80,7 +80,7 @@ const HeroSection = () => {
                 className="text-white text-2xl md:text-4xl lg:text-5xl font-medium mt-3 leading-snug"
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
-                asasas Advisory Across Asset Classes
+                Strategic Real Estate Advisory Across Asset Classes
               </h1>
 
               <p className="text-white/80 mt-3 md:mt-4 max-w-2xl text-base md:text-lg">
