@@ -84,13 +84,14 @@ const Contact = () => {
       style={{ fontFamily: 'Poppins, sans-serif' }}
     >
       Contact{" "}
-      <span className="text-gold  font-normal">
+      <span className="text-gold font-normal">
         Us
       </span>
     </h1>
   }
   subtitle="Get in touch with us for any inquiries or consultations"
   breadcrumbs={[{ name: "Contact" }]}
+  backgroundImage="/contact.jpeg"
 />
 
       <section className="section-padding">
