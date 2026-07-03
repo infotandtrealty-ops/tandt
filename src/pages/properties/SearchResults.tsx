@@ -120,15 +120,15 @@ export default function SearchResults() {
               <SwiperSlide key={index} className="h-auto">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full flex flex-col transition-all duration-300 hover:shadow-2xl">
 
-                 {/* IMAGE */}
-<div className="relative h-64 flex-shrink-0">
-  <img
-    src={project.cardImageUrl}
-    alt={project.title}
-    className="w-full h-full object-cover"
-    onError={(e) => { (e.target as HTMLImageElement).src = "https://placehold.co/600x400?text=Image+Not+Found" }}
-  />
-</div>
+                  {/* IMAGE */}
+                  <div className="relative h-64 flex-shrink-0">
+                    <img
+                      src={project.cardImageUrl}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => { (e.target as HTMLImageElement).src = "https://placehold.co/600x400?text=Image+Not+Found" }}
+                    />
+                  </div>
 
                   {/* CONTENT */}
                   <div className="p-6 flex flex-col flex-grow">
